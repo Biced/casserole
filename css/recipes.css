@@ -62,7 +62,7 @@ body {
 .date {
     margin-top: 15px;
     margin-bottom: 17px;
-
+    font-weight: normal;
     line-height: 1.2;
     font-size: 20px;
 }
@@ -181,6 +181,7 @@ line-height: 0.8;
 }
 
 #contact-form>button {
+    font-family : inherit;
     margin-top: 37px;
     margin-right: auto;
     float: left;
