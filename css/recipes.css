@@ -1,0 +1,258 @@
+:root {
+    --charcoal-grey: #2a2b33;
+}
+
+body {
+    font-family: 'Alef', sans-serif !important;
+    margin: 0;
+    direction: rtl;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: 'Alef', sans-serif !important;
+    color: var(--charcoal-grey);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: 'Alef', sans-serif !important;
+    color: var(--charcoal-grey);
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: 'Alef', sans-serif !important;
+    color: var(--charcoal-grey);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: 'Alef', sans-serif !important;
+    color: var(--charcoal-grey);
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+/* input::placeholder {
+    font-family: 'Alef', sans-serif !important;
+}
+
+textarea::placeholder {
+    font-family: 'Alef', sans-serif !important;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+#block-contain {
+    /* width: 1200px; */
+    margin: 0 7.5%;
+    columns: 3;
+    column-gap: 1.9%;
+}
+
+.block {
+    text-align: center;
+    width: 100%;
+    /* margin: 0 0 20px;
+    padding: 10px; */
+    overflow: hidden;
+    break-inside: avoid;
+    padding-bottom: 77px;
+}
+
+.block>img {
+    width: 100%;
+}
+
+.date {
+    margin-top: 15px;
+    margin-bottom: 17px;
+
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.text {
+    /* margin-top: 18px;
+    margin-bottom: 30px; */
+    margin: 18px 4.32% 30px 4.32%;
+    line-height: 1.2;
+    font-size: 20px;
+
+}
+
+.name {
+    margin: 0;
+    font-weight: 500;
+
+    line-height: 1;
+    font-size: 30px;
+}
+
+.details {
+    height: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--charcoal-grey);
+    text-decoration: none;
+    border-bottom: 1px solid var(--charcoal-grey);
+}
+
+.details>img {
+    margin-bottom: 1px;
+}
+
+.content {
+    color: var(--charcoal-grey);
+    padding-bottom: 50px;
+}
+
+.black-hero {
+    background-color: var(--charcoal-grey);
+    color: white;
+    text-align: center;
+    padding-bottom: 71px;
+}
+
+.black-hero>p {
+    font-size: 15px;
+    padding-top: 68px;
+    height: 25px;
+    padding-bottom: 17px;
+    margin: 0;
+}
+
+.black-hero>h2 {
+    height: 68px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.17;
+
+    margin-top: 17px;
+}
+
+
+.contact {
+    font-size: 15px;
+    margin: 0 7.5%;
+    margin-bottom: 71px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-wrapper {
+    width: 26vw;
+}
+
+.contact-wrapper>p {
+    line-height: 1.53;
+    font-size: 15px;
+}
+
+.contact-wrapper>p>a {
+    color: var(--charcoal-grey);
+    /* text-decoration: none;
+    border-bottom: 1px solid var(--charcoal-grey); */
+}
+
+.contact-wrapper>img {
+    margin-top: 94px;
+    margin-bottom: 28px;
+    margin-right: 16px
+}
+
+#contact-form {
+    margin-top: 71px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    width: 42vw;
+}
+
+#contact-form>input {
+    padding: 16px 20px;
+    width: 100%;
+    height: 37px;
+    border: solid 1.5px #e8e8e8;
+    margin-bottom: 19px;
+}
+
+#contact-form>textarea {
+    padding: 16px 20px;
+    width: 100%;
+    height: 150px;
+    border: solid 1.5px #e8e8e8;
+    margin-top: 0;
+}
+
+#contact-form>button {
+    margin-top: 37px;
+    margin-right: auto;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--charcoal-grey);
+    color: var(--charcoal-grey);
+    cursor: pointer;
+}
+
+#contact-form>button>img {
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.page-hero {
+    height: 422px;
+    width: 100%;
+    background-image: url("../img/recipes/hero.png");
+    position: relative;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.page-hero:before {
+    height: auto;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.page-hero>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    margin: 0;
+    top: 45.5%;
+    left: 50%;
+    transform: translate(-45.5%, -50%);
+}
+
+.inner-nav {
+    height: 74px;
+    line-height: 74px;
+}
+
+.inner-nav>p {
+
+    margin: 0 7.5%;
+}
