@@ -1,0 +1,172 @@
+:root {
+    --charcoal-grey: #2a2b33;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alef', sans-serif !important;
+    margin: 0;
+    direction: rtl;
+    /* overflow: hidden; */
+}
+
+.page-hero {
+    height: 422px;
+    width: 100%;
+    background-image: url("../img/our-story/hero.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.page-hero:before {
+    height: auto;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .1);
+}
+
+.page-hero>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    margin: 0;
+    top: 45.5%;
+    left: 50%;
+    transform: translate(-45.5%, -50%);
+}
+
+.inner-nav {
+    height: 74px;
+    line-height: 74px;
+}
+
+.inner-nav>p {
+
+    margin: 0 7.69%;
+}
+
+.welcome,.crew{
+    width:100%;
+    display: flex;
+    padding-right: 7.69%;
+    margin-bottom: 100px;
+}
+
+.welcome > img{
+    width: 41.58vw;
+    height: 100%;
+}
+
+.text{
+   padding-right: 5.56vw;
+    padding-left: 9.96vw;
+
+ }
+ .text > p{
+     width:35.36vw;
+ }
+
+
+
+ #img{
+     width: 100vw;
+     margin-bottom: 70px;
+ }
+ .crew-txt2 >h3 ,.crew-txt1 >h3 , .text>h2{
+    font-size: 30px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.crew-txt2 > p, .crew-txt1 > p, .text>p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+ .crew-txt1{
+     padding-left:15.81vw;
+
+ }
+
+
+ .crew-txt2{
+     padding-left:12vw;
+ }
+
+ .crew-txt1 > p{
+width:31.84vw;
+ }
+ .crew-txt2 > p{
+width: 32.36vw;
+ }
+
+ #img-mobile{
+     display: none;
+ }
+ @media only screen and (max-width: 767px) {
+
+    .crew, .inner-nav{
+        display :none;
+    }
+
+    #img{
+        margin: 50px 0;
+    }
+
+    .page-hero {
+        height: 208px;
+        margin-bottom: 38px;
+    }
+
+
+
+    .page-hero>h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .welcome > img{
+        display: none;
+    }
+.text{
+   padding: 0;
+   width: 100%;
+}
+.text>p{
+  width: 100%;
+}
+    #img-mobile{
+        display: inline-block;
+        width: 100%;
+        padding: 40px 30px 50px 30px;
+    }
+
+    .welcome{
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+
+
+    }
+
+    .text>h2{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .text>p{
+        font-size: 15px;
+        line-height: 1.33;
+    }
+ }
