@@ -405,35 +405,14 @@ line-height: 0.8;
     }
     .page-hero {
         height: 208px;
-        width: 100%;
-        /* background-image: url(".img/hero.png"); */
-        position: relative;
-        background-repeat: no-repeat;
-        /* background-attachment: fixed; */
-        background-position: center;
         margin-bottom: 38px;
     }
 
-    .page-hero:before {
-        height: 208px;
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, .5);
-    }
+
 
     .page-hero>h1 {
         font-size: 25px;
-        font-weight: 500;
-        color: white;
-        position: absolute;
         margin: 0;
-        top: 45.5%;
-        left: 50%;
-        transform: translate(-45.5%, -50%);
     }
 
     .inner-nav {
