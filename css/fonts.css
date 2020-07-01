@@ -1,0 +1,21 @@
+@font-face{
+	font-family: 'atlas';
+	font-weight: 400; /*(regular)*/
+	font-style: normal;
+	src: url('../font/atlas-regular-aaa.woff') format('woff'),
+		url('../font/atlas-regular-aaa.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'atlas';
+	font-weight: 700; /*(bold)*/
+	font-style: normal;
+	src: url('../font/atlas-medium-aaa.woff2') format('woff2'),
+		url('../font/atlas-medium-aaa.woff') format('woff');
+}
+@font-face{
+	font-family: 'atlas';
+	font-weight: 900; /*(black)*/
+	font-style: normal;
+	src: url('../font/atlas-black-aaa.woff2') format('woff2'),
+		url('../font/atlas-black-aaa.woff') format('woff');
+}
