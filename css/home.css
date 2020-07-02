@@ -45,23 +45,11 @@ body {
 
 }
 .page-hero{
-    background-image: url("../img/home/photo-top-banner-home-page.jpg");
     height: 56.81vw;
     margin-bottom: 5.2vw;
     max-height: 1090.75px;
 }
-.services-wrapper >a:nth-child(1) >.services{
-    background-image: url("../img/home/bread-photo-mobile.jpg");
-}
-.services-wrapper >a:nth-child(2) >.services{
-    background-image: url("../img/home/fish-photo-mobile.jpg");
-}
-.services-wrapper>a:nth-child(3) >.services{
-    background-image: url("../img/home/salad-photo-mobile.jpg");
-}
-.services-wrapper>a:nth-child(4)>.services{
-    background-image: url("../img/home/desert-photo-mobile.jpg");
-}
+
 
 .services:before,.page-hero:before {
     height: auto;
@@ -158,19 +146,42 @@ line-height: 0.8;
         margin: 0;
     }
 
+
+}
+
+
+/* images */
+
+.page-hero{
+    background-image: url("../img/home/photo-top-banner-home-page.jpg");
+}
+.services-wrapper >a:nth-child(1) >.services{
+    background-image: url("../img/home/bread-photo-mobile.jpg");
+}
+.services-wrapper >a:nth-child(2) >.services{
+    background-image: url("../img/home/fish-photo-mobile.jpg");
+}
+.services-wrapper>a:nth-child(3) >.services{
+    background-image: url("../img/home/salad-photo-mobile.jpg");
+}
+.services-wrapper>a:nth-child(4)>.services{
+    background-image: url("../img/home/desert-photo-mobile.jpg");
+}
+
+@media only screen and (min-width: 1024px){
     .page-hero{
-        background-image: url("../img/home/photo-top-banner-home-page.jpg");
+        background-image: url("../img/home/photo-top-banner-home-page@2x.jpg");
     }
     .services-wrapper >a:nth-child(1) >.services{
-        background-image: url("../img/home/bread-photo-mobile.jpg");
+        background-image: url("../img/home/bread-trey-photo@2x.jpg");
     }
     .services-wrapper >a:nth-child(2) >.services{
-        background-image: url("../img/home/fish-photo-mobile.jpg");
+        background-image: url("../img/home/fish-trey-photo@2x.jpg");
     }
     .services-wrapper>a:nth-child(3) >.services{
-        background-image: url("../img/home/salad-photo-mobile.jpg");
+        background-image: url("../img/home/salad-trey-photo@2x.jpg");
     }
     .services-wrapper>a:nth-child(4)>.services{
-        background-image: url("../img/home/desert-photo-mobile.jpg");
+        background-image: url("../img/home/desert-trey-photo@2x.jpg");
     }
-}
+    }
