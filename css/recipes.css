@@ -6,8 +6,9 @@
 }
 
 body {
+    max-width: 1920px;
     font-family: 'atlas';
-    margin: 0;
+    margin: 0 auto;
     direction: rtl;
 }
 
@@ -206,7 +207,8 @@ line-height: 0.8;
 }
 
 .page-hero {
-    height: 422px;
+    height:30.89vw;
+    max-height: 593.08px;
     width: 100%;
     background-image: url("../img/recipes/hero.png");
     position: relative;
@@ -234,9 +236,9 @@ line-height: 0.8;
     color: white;
     position: absolute;
     margin: 0;
-    top: 45.5%;
+    top: 50%;
     left: 50%;
-    transform: translate(-45.5%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .inner-nav {
@@ -407,7 +409,7 @@ line-height: 0.8;
 
     }
     .page-hero {
-        height: 208px;
+        height: 67.97vw;
         margin-bottom: 38px;
     }
 

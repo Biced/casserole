@@ -11,14 +11,17 @@
 
 body {
 
+max-width: 1920px;
+
     font-family: 'atlas';
-    margin: 0;
+    margin: 0 auto;
     direction: rtl;
     /* overflow: hidden; */
 }
 
 .page-hero {
-    height: 422px;
+    max-height:593.08px;
+    height: 30.89vw;
     width: 100%;
     background-image: url("../img/our-story/hero.jpg");
     position: relative;
@@ -41,8 +44,9 @@ body {
 }
 
 .page-hero>h1 {
+    text-align: center;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     position: absolute;
     margin: 0;
@@ -52,8 +56,8 @@ body {
 }
 
 .inner-nav {
-    height: 74px;
-    line-height: 74px;
+    height: 5.42vw;
+    line-height: 5.42vw;
 }
 
 .inner-nav>p {
@@ -62,37 +66,40 @@ body {
 }
 
 .welcome,.crew{
-    width:100%;
+    /* width:calc(100% - 7.69%); */
     display: flex;
     padding-right: 7.69%;
-    margin-bottom: 100px;
+    margin-bottom: 7.32vw;
+
 }
 
-.welcome > img{
-    width: 41.58vw;
-    height: 100%;
-}
+
 
 .text{
    padding-right: 5.56vw;
-    padding-left: 9.96vw;
+    /* padding-left: 8vw; */
 
  }
  .text > p{
-     width:35.36vw;
+     max-width: 702px;
+     width:36.6vw;
  }
 
 
 
  #img{
-     width: 100vw;
-     margin-bottom: 70px;
+     width: 100%;
+     max-width: 1920px;
+     margin-bottom: 5.12vw;
+     height: 100%;
  }
+
+
  .crew-txt2 >h3 ,.crew-txt1 >h3 , .text>h2{
     font-size: 30px;
   font-weight: 900;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 2.05vw;
 }
 .crew-txt2 > p, .crew-txt1 > p, .text>p{
     margin: 0;
@@ -105,9 +112,7 @@ body {
  }
 
 
- .crew-txt2{
-     padding-left:12vw;
- }
+
 
  .crew-txt1 > p{
 width:31.84vw;
@@ -119,18 +124,21 @@ width: 32.36vw;
  #img-mobile{
      display: none;
  }
- @media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 1246px) {
 
     .crew, .inner-nav{
         display :none;
+        padding: 0;
     }
 
     #img{
+
         margin: 50px 0;
     }
 
     .page-hero {
-        height: 208px;
+
+        height: 57.78vw;
         margin-bottom: 38px;
     }
 
@@ -148,9 +156,7 @@ width: 32.36vw;
    padding: 0;
    width: 100%;
 }
-.text>p{
-  width: 100%;
-}
+
     #img-mobile{
         display: inline-block;
         width: 100%;
@@ -158,8 +164,11 @@ width: 32.36vw;
     }
 
     .welcome{
-        margin: 0;
-        padding: 0 20px;
+
+
+        padding: 0 ;
+width: 88.89%;
+margin: 0 auto;
         text-align: center;
 
 
@@ -172,5 +181,7 @@ width: 32.36vw;
     .text>p{
         font-size: 15px;
         line-height: 1.33;
+        width: 100%;
+       margin: auto;
     }
  }

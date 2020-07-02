@@ -92,7 +92,7 @@ body {
     color: var(--charcoal-grey);
 }
 
-.contact-wrapper>img {
+.contact-wrapper>svg {
     margin-top: 94px;
     margin-bottom: 28px;
     margin-right: 16px
@@ -162,12 +162,12 @@ body {
 .social{
     height: 36px;
 }
-.social>a:nth-child(1)>img{
+.social>a>svg{
     height: 30px;
     width: auto;
     margin: 0  0 2px 41px;
 }
-.social>a:nth-child(2)>img{
+.social>a>img{
     height: 32px;
     width: auto;
     margin: auto 0;
@@ -237,7 +237,7 @@ body {
         font-size: 15px;
     }
 
-    .contact-wrapper>img {
+    .contact-wrapper>svg {
 
         margin: 40px 0 19px 0;
 
@@ -304,11 +304,11 @@ line-height: 0;
         height: 24px;
         margin-top: 15px;
     }
-    .social>a:nth-child(1)>img{
+    .social>a>svg{
         height: 21px;
         margin: 0  0 1px 26px;
     }
-    .social>a:nth-child(2)>img{
+    .social>a>img{
         height: 23px;
     }
 
