@@ -35,7 +35,7 @@ body {
 
   .services, .page-hero {
     height: 30.89vw;
-
+    max-height: 593.08px;
 
     position: relative;
     background-repeat: no-repeat;
@@ -48,6 +48,7 @@ body {
     background-image: url("../img/home/photo-top-banner-home-page.jpg");
     height: 56.81vw;
     margin-bottom: 5.2vw;
+    max-height: 1090.75px;
 }
 .services-wrapper >a:nth-child(1) >.services{
     background-image: url("../img/home/bread-photo-mobile.jpg");
