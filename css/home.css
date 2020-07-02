@@ -9,8 +9,9 @@
 }
 
 body {
+    max-width:1920px;
     font-family: 'atlas';
-    margin: 0;
+    margin: 0 auto;
     direction: rtl;
     /* overflow: hidden; */
 }
