@@ -28,8 +28,8 @@ body {
     flex-basis: calc(50% - 1.1vw);  margin-bottom:2.2vw;
   }
 
-  .services-wrapper > a:nth-child(even) {  margin-right: 15px; }
-  .services-wrapper > a:nth-child(odd) { margin-left: 15px; }
+  .services-wrapper > a:nth-child(even) {  margin-right: 1.1vw; }
+  .services-wrapper > a:nth-child(odd) { margin-left: 1.1vw; }
 
 
   .services, .page-hero {
@@ -154,5 +154,21 @@ line-height: 0.8;
     .services>h2 {
         font-size: 30px;
         margin: 0;
+    }
+
+    .page-hero{
+        background-image: url("../img/home/photo-top-banner-home-page.jpg");
+    }
+    .services-wrapper >a:nth-child(1) >.services{
+        background-image: url("../img/home/bread-photo-mobile.jpg");
+    }
+    .services-wrapper >a:nth-child(2) >.services{
+        background-image: url("../img/home/fish-photo-mobile.jpg");
+    }
+    .services-wrapper>a:nth-child(3) >.services{
+        background-image: url("../img/home/salad-photo-mobile.jpg");
+    }
+    .services-wrapper>a:nth-child(4)>.services{
+        background-image: url("../img/home/desert-photo-mobile.jpg");
     }
 }
