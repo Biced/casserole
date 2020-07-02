@@ -1,34 +1,37 @@
+@import "./fonts.css";
+
+
 :root {
     --charcoal-grey: #2a2b33;
 }
 
 body {
-    font-family: 'Alef', sans-serif !important;
+    font-family: 'atlas';
     margin: 0;
     direction: rtl;
 }
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    font-family: 'Alef', sans-serif !important;
+    font-family: 'atlas';
     color: var(--charcoal-grey);
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    font-family: 'Alef', sans-serif !important;
+    font-family: 'atlas';
     color: var(--charcoal-grey);
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
-    font-family: 'Alef', sans-serif !important;
+    font-family: 'atlas';
     color: var(--charcoal-grey);
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
-    font-family: 'Alef', sans-serif !important;
+    font-family: 'atlas';
     color: var(--charcoal-grey);
 }
 
