@@ -67,6 +67,7 @@ body {
 
 }
 .services>h2, .page-hero>h1 {
+    width: 100%;
     font-size: 50px;
     font-weight: 700;
     color: white;

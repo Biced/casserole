@@ -56,14 +56,24 @@
         <input type="text" id="search" placeholder="חיפוש">
         <img alt="" id="logo">
     </div>
-
-
-    <!-- <div class="box">
-
-    </div>
-    <div class="box1"></div> -->
-
     <script src="./header.js"></script>
+    <!-- header scroll -->
+    <script>
+        const htmlTag = document.querySelector('html'),
+            bodyTag = document.querySelector('body'),
+            nav = document.querySelector('.header');
+        console.log(nav);
+        let scrolled = () => {
+            let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
+            return Math.floor(dec * 100);
+        }
+
+        document.addEventListener('scroll', () => {
+            console.log('scrolling');
+            nav.style.setPropery('background', scrolled() > 50 ? 'rgba(42, 43, 51, 0.8)' : 'transparemt');
+        })
+
+    </script>
 </body>
 
 </html>
