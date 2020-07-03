@@ -120,7 +120,7 @@ min-width: 405px;
         text-decoration: none;
 
     }
-    .bottom-nav>a>img{
+    .bottom-nav>a{
         margin-top: 36px;
     }
 
@@ -241,8 +241,7 @@ body {
 
 #logo{
 
-    content: url(../img/header/casserole-logo-white-desktop.svg);
-    margin-left: 40px;
+    margin:auto  auto  auto 38px;
     /* filter: brightness(0) saturate(100%) invert(12%) sepia(11%) saturate(800%) hue-rotate(196deg) brightness(103%) contrast(88%); */
 }
 
