@@ -11,10 +11,10 @@
 
 
 .menu-btn {
-    position: fixed;
+    /* position: fixed; */
     z-index: 3;
-    right: 38px;
-    top: 37px;
+    margin-right: 38px;
+    margin-top: 39px;
     cursor: pointer;
     transition: all 0.5s ease-out; }
     .menu-btn .btn-line {
@@ -24,8 +24,10 @@
       background: white;
       transition: all 0.5s ease-out; }
     .menu-btn.close {
-      transform: rotate(180deg);
-      right: 43px;
+        /* not possible w/o possition fixed  */
+      /* transform: rotate(1800deg); */
+      margin-right: 43px;
+      margin-top: 37px;
      }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -41,6 +43,8 @@
     }
 
   .menu {
+    max-width:1920px;
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -106,11 +110,13 @@ min-width: 405px;
         position: absolute;
         bottom: 0;
         right: 0;
-        width: calc(29.65vw - 90px);
+        width: calc(100% - 90px);
+        /* width: 100%; */
         min-width: 315px;
         height: 109px;
         z-index: 9999;
         margin-right: 45px;
+        margin-left: 45px;
  border-top: 1px  solid var(--charcoal-grey);
  display: flex;
 
@@ -185,6 +191,8 @@ body {
 }
 
 .header{
+    max-width:1920px;
+    margin: 0 auto;
     transition: background-color 0.2s ease;
     position: fixed;
     z-index: 2;
@@ -223,7 +231,7 @@ body {
     /* margin-right:30px;
     margin-left: 29px;
     margin-top: 35px; */
-    margin: auto 99px auto 29px;
+    margin: auto 29px auto 29px;
 }
 
 #search-icon{
@@ -273,7 +281,7 @@ body {
 }
 #cart{
     height: 17px;
-    margin: auto 62px auto 18px;
+    margin: auto 18px auto 18px;
 }
 #search-icon{
     height:  16px;
@@ -306,12 +314,13 @@ body {
     margin-top:19.53vh;
 }
 .menu-btn{
-    top: 20px;
-    right: 6.67vw;
+   margin-top: 20px;
+    margin-right: 6.67vw;
 }
 
 .menu-btn.close{
-    right: 6.67vw;
+    margin-right: 6.67vw;
+    margin-top: 28px;
 }
 .menu-btn .btn-line {
     width: 20px;

@@ -10,8 +10,9 @@
 
 body {
     max-width:1920px;
+    margin: 0 auto !important;
     font-family: 'atlas';
-    margin: 0 auto;
+
     direction: rtl;
     /* overflow: hidden; */
 }
