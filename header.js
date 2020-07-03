@@ -32,6 +32,11 @@ function toggleMenu() {
 
         //Set Menu State
         showMenu = true;
+        document.querySelector('.show').addEventListener('click', (e) => {
+            if (e.target !== document.querySelector('.menu-nav') && e.target !== document.querySelector('.bottom-nav')) {
+                toggleMenu();
+            }
+        })
     } else {
         menuBtn.classList.remove("close");
         menu.classList.remove("show");
