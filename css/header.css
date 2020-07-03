@@ -66,6 +66,7 @@ min-width: 405px;
         transform: translate3d(0, 0, 0); }
 
     .menu .nav-item {
+        width: fit-content;
       transform: translate3d(600px, 0, 0);
       transition: all 0.5s ease-out; }
       .menu .nav-item.show {
@@ -73,7 +74,7 @@ min-width: 405px;
       .menu .nav-item.current > a {
         font-weight: 900; }
     .menu .nav-link {
-        width: fit-content;
+
       display: inline-block;
       position: relative;
       font-size: 30px;
@@ -297,6 +298,9 @@ body {
     text-align: center;
     font-size: 20px;
     line-height: 3;
+}
+.menu .nav-item {
+    width: 100%;
 }
 
 .nav-item:nth-child(1) {
