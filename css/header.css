@@ -197,13 +197,14 @@ body {
 
 
 #search{
+    transition: all .2s ease-in-out;
     border: 0;
     padding: 7px 0;
     background-color: transparent;
     border-bottom: 1px white solid;
     color: white;
     font-family: 'atlas' !important;
-    width: 276px;
+    width: 20.2%;
 
 
     /* margin-top:30px;
@@ -347,10 +348,10 @@ body {
 
 /* OPEN SEARCH */
 #search:focus, #search:-webkit-autofill {
+
     border: 0;
     outline: 0;
     background: white;
-    width:calc(227px - 22px);
     padding: 11px;
     color: var(--charcoal-grey);
 }
