@@ -373,7 +373,8 @@
         const htmlTag = document.querySelector('html'),
             bodyTag = document.querySelector('body'),
             nav = document.querySelector('.header'),
-            searchActive = document.querySelector('#search');
+            searchBtn = document.querySelector('.header'),
+            searchActive = document.querySelector('#search-icon');
 
         let scrolled = () => {
             let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
@@ -381,11 +382,17 @@
         }
 
         document.addEventListener('scroll', () => {
-            nav.style.setProperty('background-color', scrolled() > 20 || document.querySelector('#search:focus') ? 'rgba(42, 43, 51, 0.8)' : 'transparent');
+            nav.style.setProperty('background-color', scrolled() > 5 || document.querySelector('#search:focus') ? 'rgba(42, 43, 51, 0.8)' : 'transparent');
         })
         searchActive.addEventListener('click', () => {
             if (document.querySelector('#search:focus')) {
                 nav.style.backgroundColor = 'rgba(42, 43, 51, 0.8)';
+            }
+        });
+
+        searchBtn.addEventListener('click', () => {
+            if (screen.width) {
+                console.log(window.screen.width);
             }
         });
 
