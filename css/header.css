@@ -293,9 +293,9 @@ body {
 .header{
     height: 51px;
 }
-.menu{
+/* .menu{
     height: 100%;
-}
+} */
 .menu-branding, .menu-nav, .bottom-nav {
     min-width: 100%;
 }
