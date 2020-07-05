@@ -20,19 +20,17 @@
         </div>
 
         <nav class="menu">
-
+            <div class="mobile-search">
+                <svg id="search-icon2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2" transform="matrix(-1 0 0 1 22 0)">
+                        <circle cx="14" cy="8" r="8" />
+                        <path stroke-linecap="square" d="M8.25 14.25L0.75 21.75" />
+                    </g>
+                </svg>
+                <input type="text" id="mobile-search" placeholder="חיפוש">
+            </div>
             <ul class="menu-nav">
-                <div class="mobile-search">
-                    <svg id="search-icon2" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                        viewBox="0 0 22 22">
-                        <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
-                            transform="matrix(-1 0 0 1 22 0)">
-                            <circle cx="14" cy="8" r="8" />
-                            <path stroke-linecap="square" d="M8.25 14.25L0.75 21.75" />
-                        </g>
-                    </svg>
-                    <input type="text" id="mobile-search" placeholder="חיפוש">
-                </div>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         מגשי אירוח
@@ -398,7 +396,7 @@
             nav.style.setProperty('background-color', scrolled() > 5 || document.querySelector('#search:focus') ? 'rgba(42, 43, 51, 0.8)' : 'transparent');
         })
         searchActive.addEventListener('click', (e) => {
-            if (document.querySelector('#search:focus') && e.target == searchActive) {
+            if (document.querySelector('#search:focus')) {
                 nav.style.backgroundColor = 'rgba(42, 43, 51, 0.8)';
             }
         });
@@ -407,6 +405,9 @@
             if (screen.width < 620) {
                 searchMobile.style.display = "flex";
                 toggleMenu();
+                searchMobile.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                });
             }
         });
 

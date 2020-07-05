@@ -99,17 +99,17 @@ min-width: 405px;
         transition: all 0.2s ease;
      }
 
-  .nav-item:nth-child(2) {
+  .nav-item:nth-child(1) {
     margin-top:112px;
     transition-delay: 0.1s; }
 
-  .nav-item:nth-child(3) {
+  .nav-item:nth-child(2) {
     transition-delay: 0.2s; }
 
-  .nav-item:nth-child(4) {
+  .nav-item:nth-child(3) {
     transition-delay: 0.3s; }
 
-  .nav-item:nth-child(5) {
+  .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
 
 
@@ -316,7 +316,7 @@ body {
     width: 100%;
 }
 
-.nav-item:nth-child(2) {
+.nav-item:nth-child(1) {
     margin-top:19.53vh;
 }
 
@@ -363,7 +363,7 @@ top: 20px;
 
 .mobile-search{
     height: 40px;
-
+    z-index: 4;
     width: calc(100% - 13.34vw);
     position: absolute;
 top:9.55% ;
