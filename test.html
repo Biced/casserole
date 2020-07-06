@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* dont forget to change place holder style */
+        #count::-webkit-inner-spin-button {
+            display: none;
+        }
+
+
+
+        .counter-wrapper {
+            display: flex;
+        }
+
+
+        #minus,
+        #count,
+        #plus {
+
+
+            border: 1px #999 solid;
+            border-radius: 0;
+            background: white;
+            color: red;
+
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 0;
+            text-align: center;
+        }
+
+        #count {
+            padding: 6px 12px;
+            width: 12px;
+        }
+
+        #minus,
+        #plus {
+            line-height: initial;
+            /* height: 100%; */
+
+            width: 38px;
+        }
+
+        #minus {
+            margin-right: -1px;
+        }
+
+        #plus {
+            margin-left: -1px;
+        }
+    </style>
+    <div class="counter-wrapper">
+        <button id="plus" class="btn btn-btn-primary" onclick="minus()">-</button>
+        <input type="number" id="count" value="0">
+        <button id="minus" class="btn btn-primary" onclick="plus()">+</button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var countEl = document.getElementById("count");
+
+        function plus() {
+
+            countEl.value++;
+
+            if (countEl.value > 9 && countEl.value < 99) {
+
+                countEl.style.width = "22px";
+            }
+            if (countEl.value > 999 && countEl.value > 9999) {
+                countEl.style.width = "46px";
+            }
+            if (countEl.value > 99 && countEl.value > 999) {
+                countEl.style.width = "34px";
+            }
+
+        }
+        function minus() {
+            if (countEl.value > 0) {
+
+                countEl.value--;
+            }
+
+
+        }
+        countEl.addEventListener('keydown', (e) => {
+
+
+            countEl.style.width = "22px";
+
+            if (countEl.value > 10) {
+                countEl.style.width = "34px";
+            }
+            if (countEl.value > 100) {
+                countEl.style.width = "46px";
+            }
+
+        })
+
+    </script>
+
+
+
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            width: 100%;
+            position: relative;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade active" style="width:40%">
+
+                <img src="./img/recipes-inner/05-d-747-c-8-c-8283-cab-9-c-2-fad-5-cb-9-ca-9-c-3-a.jpg"
+                    style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade active" style="width:40%">
+
+                <img src="./img/recipes-inner/dde-3-fa-308-a-884-c-28-f-319999-bfa-94-c-1-c-9.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade" style="width:40%">
+
+                <img src="./img/recipes-inner/99-best-food-photography-tips-4.jpg" style="width:100%">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img
+                        src="./img/recipes-inner/05-d-747-c-8-c-8283-cab-9-c-2-fad-5-cb-9-ca-9-c-3-a.jpg"></div>
+                <div class="swiper-slide"><img
+                        src="./img/recipes-inner/dde-3-fa-308-a-884-c-28-f-319999-bfa-94-c-1-c-9.jpg"></div>
+                <div class="swiper-slide"><img src="./img/recipes-inner/99-best-food-photography-tips-4.jpg"></div>
+                ...
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+
+            var mySwiper = new Swiper('.swiper-container', {
+
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 0,
+
+
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            })
+        </script>
+        <script>
+            var slides = document.getElementsByClassName("mySlides");
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+
+            function showSlides(n) {
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                if (n > slides.length) {
+                    slideIndex = 1
+                    slides[slideIndex - 1].style.display = "block";
+                    slides[slideIndex].style.display = "block";
+                    return
+                }
+                if (n == 0) {
+                    slideIndex = slides.length
+                    slides[slideIndex - 1].style.display = "block";
+                    slides[slideIndex - 2].style.display = "block";
+                    return
+                }
+                slides[slideIndex - 1].style.display = "block";
+                slides[slideIndex].style.display = "block";
+
+            }
+        </script>
+
+
+    </body>
+
+</html>
