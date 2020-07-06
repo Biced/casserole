@@ -48,3 +48,35 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+const htmlTag = document.querySelector('html'),
+    bodyTag = document.querySelector('body'),
+    nav = document.querySelector('.header'),
+    searchBtn = document.querySelector('#search-icon'),
+    searchMobile = document.querySelector('.mobile-search'),
+    searchActive = document.querySelector('#search');
+
+let scrolled = () => {
+    let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
+    return Math.floor(dec * 100);
+}
+
+document.addEventListener('scroll', () => {
+    nav.style.setProperty('background-color', scrolled() > 5 || document.querySelector('#search:focus') ? 'rgba(42, 43, 51, 0.8)' : 'transparent');
+})
+searchActive.addEventListener('click', (e) => {
+    if (document.querySelector('#search:focus')) {
+        nav.style.backgroundColor = 'rgba(42, 43, 51, 0.8)';
+    }
+});
+
+searchBtn.addEventListener('click', () => {
+    if (screen.width < 620) {
+        searchMobile.style.display = "flex";
+        navItems[0].style.marginTop = "0px";
+        toggleMenu();
+        searchMobile.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    }
+});

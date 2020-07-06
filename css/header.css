@@ -49,29 +49,33 @@
 
   .menu {
     max-width:1920px;
-
+    display: flex;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     width: 100%;
-
+    min-width: 405px;
+    width: 29.65%;
+    height: 100vh;
+    background: white;
     visibility: hidden; }
     .menu.show {
       visibility: visible; }
-    .menu-branding, .menu-nav {
+    .menu-nav {
       display: flex;
       flex-flow: column wrap;
-min-width: 405px;
-      width: 29.65%;
-      height: 100vh;
-      overflow: hidden; }
-    .menu-nav {
+
+      width: 100%;
       margin: 0;
       padding: 0;
-      background: white;
+
       list-style: none;
+      overflow: hidden; }
+    .menu {
+
       transform: translate3d(0, -100%, 0);
       transition: all 0.5s ease-out; }
-      .menu-nav.show {
+      .menu.show {
         transform: translate3d(0, 0, 0); }
 
     .menu .nav-item {
@@ -114,16 +118,12 @@ min-width: 405px;
 
 
     .bottom-nav{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: calc(100% - 90px);
-        /* width: 100%; */
-        min-width: 315px;
+        margin: auto 42px 0 42px;
+        width: 100%;
+        /* width: calc(100% - 84px); */
+
         height: 109px;
-        z-index: 9999;
-        margin-right: 42px;
-        margin-left: 42px;
+
  border-top: 1px  solid var(--charcoal-grey);
  display: flex;
 
@@ -296,28 +296,29 @@ body {
 /* .menu{
     height: 100%;
 } */
-.menu-branding, .menu-nav, .bottom-nav {
-    min-width: 100%;
-}
+
 .bottom-nav {
-    min-width: auto;
-    width: calc(100% - 50px);
-    margin: 0 6.67vw;
+
+    margin: auto 6.67vw 0 6.67vw;
 }
 
+.menu {
+    min-width: 100%;
+}
 .menu .nav-link{
     margin: 0;
-    width: 100%;
-    text-align: center;
+    width: fit-content;
+
     font-size: 20px;
     line-height: 3;
 }
 .menu .nav-item {
     width: 100%;
+    text-align: center;
 }
 
 .nav-item:nth-child(1) {
-    margin-top:19.53vh;
+    margin-top:134px;
 }
 
 .menu-btn{
@@ -363,11 +364,11 @@ top: 20px;
 
 .mobile-search{
     height: 40px;
-    z-index: 4;
-    width: calc(100% - 13.34vw);
-    position: absolute;
-top:9.55% ;
-margin: 0 6.67vw;
+    /* z-index: 4; */
+    width: 100% ;
+    /* position: absolute; */
+
+margin:65px 6.67vw 0 6.67vw;
 border-top: 1px black solid;
 border-bottom: 1px black solid;
 /* display: flex; */
