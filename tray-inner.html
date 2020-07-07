@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/tray-inner.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/recipes-inner/photo-trey-inner-page.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/recipes-inner/photo-trey-inner-page-2.jpg">
+        </div>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+
+
+
+    <div class="inner-nav">
+        <p>דף הבית > הסיפור שלנו</p>
+    </div>
+
+
+    <div class="services-wrapper">
+
+        <div class="services">
+            <h1 class="product-title">
+                מגש מיני קישים במגוון מילויים
+            </h1>
+            <p><strong><span class="p-Price">165</span> ₪ </strong>/ <span class="p-Qty">30</span> יחידות</p>
+            <p>מיני קישים על בסיס בצק פריך במילוי גבינות
+                ותוספות שונות כגון: בטטה, פטריות וחציל קלוי.</p>
+
+            <form onsubmit="event.preventDefault()">
+                <p>כמות</p>
+                <div class="counter-wrapper">
+                    <button id="plus">+</button>
+                    <input type="number" id="count" placeholder="0" value="0">
+                    <button id="minus">-</button>
+                </div>
+                <button id="submit">הוספה</button>
+
+            </form>
+
+            <div class="share">
+                <span>שיתוף</span>
+                <img>
+                <img>
+                <span>הדפסה</span>
+                <img>
+            </div>
+        </div>
+
+
+        <img class="img1" src="img/recipes-inner/photo-trey-inner-page.jpg">
+        <div class="holder">
+        </div>
+        <img class="img2" src="img/recipes-inner/photo-trey-inner-page-2.jpg">
+
+
+
+
+
+
+        <a href="" id="link">הזמנתם? אל תשכחו לתייג אותנו באינסטגרם<img>casserole.catering@</a>
+    </div>
+
+
+
+
+
+    <h2>מוצרים נוספים</h2>
+    <div class="products-sugested">
+
+
+        <div class="sugested-product">
+            <img src="./img/recipes-inner/dde-3-fa-308-a-884-c-28-f-319999-bfa-94-c-1-c-9.jpg" alt=""
+                class="products-img">
+            <h3 class="products-title">שם המנה</h3>
+            <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+            <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="19"
+                    height="7" viewBox="0 0 19 7">
+                    <path fill="#999" fill-rule="evenodd"
+                        d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                        transform="translate(-1 -12)" />
+                </svg></button>
+        </div>
+        <div class="sugested-product">
+            <img src="./img/recipes-inner/99-best-food-photography-tips-4.jpg" alt="" class="products-img">
+            <h3 class="products-title">שם המנה</h3>
+            <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+            <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="19"
+                    height="7" viewBox="0 0 19 7">
+                    <path fill="#999" fill-rule="evenodd"
+                        d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                        transform="translate(-1 -12)" />
+                </svg></button>
+        </div>
+        <div class="sugested-product">
+            <img src="./img/recipes-inner/05-d-747-c-8-c-8283-cab-9-c-2-fad-5-cb-9-ca-9-c-3-a.jpg" alt=""
+                class="products-img">
+            <h3 class="products-title">שם המנה</h3>
+            <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+            <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="19"
+                    height="7" viewBox="0 0 19 7">
+                    <path fill="#999" fill-rule="evenodd"
+                        d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                        transform="translate(-1 -12)" />
+                </svg></button>
+        </div>
+
+    </div>
+    <div class="wrapper-swiper">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="sugested-product">
+                        <img src="./img/recipes-inner/dde-3-fa-308-a-884-c-28-f-319999-bfa-94-c-1-c-9.jpg" alt=""
+                            class="products-img">
+                        <h3 class="products-title">שם המנה</h3>
+                        <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+                        <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                width="19" height="7" viewBox="0 0 19 7">
+                                <path fill="#999" fill-rule="evenodd"
+                                    d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                                    transform="translate(-1 -12)" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sugested-product">
+                        <img src="./img/recipes-inner/99-best-food-photography-tips-4.jpg" alt="" class="products-img">
+                        <h3 class="products-title">שם המנה</h3>
+                        <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+                        <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                width="19" height="7" viewBox="0 0 19 7">
+                                <path fill="#999" fill-rule="evenodd"
+                                    d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                                    transform="translate(-1 -12)" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sugested-product">
+                        <img src="./img/recipes-inner/05-d-747-c-8-c-8283-cab-9-c-2-fad-5-cb-9-ca-9-c-3-a.jpg" alt=""
+                            class="products-img">
+                        <h3 class="products-title">שם המנה</h3>
+                        <p><strong><span class="price">0</span> ₪ </strong>/ <span class="qty">0</span> יחידות</p>
+                        <button class="details" href="#">לפרטים נוספים&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                width="19" height="7" viewBox="0 0 19 7">
+                                <path fill="#999" fill-rule="evenodd"
+                                    d="M4.057 12.61L1 15.598 4.067 18.479 5.258 18.479 2.504 15.92 19.36 15.92 19.36 15.169 2.523 15.169 5.258 12.61z"
+                                    transform="translate(-1 -12)" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./tray-inner.js"></script>
+</body>
+
+</html>

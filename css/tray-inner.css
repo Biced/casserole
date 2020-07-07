@@ -25,112 +25,135 @@ body {
 }
 
 .inner-nav>p {
-    font-size: 15px;
 
     margin: 0 7.5%;
 }
-
-
-
-.top-section{
-    width: 85%;
-    margin: 0 7.5%;
-    display: flex;
-
-    justify-content: space-between;
-    border-bottom: solid 1px #dce4eb;
-    padding-bottom: 70px;
-}
-
-.recipe-details{
-    width: 45.9%;
-    border-top: solid 1px #dce4eb;
-
-}
-.recipe-image{
-    width: 50.04%;
-}
-
-
-.recipe-details > h1{
-font-size: 30px;
-font-weight: 900;
-margin: 45px 0 23px 0;
-}
-
-.recipe-details > p{
-    font-size: 20px;
-font-weight: 700;
-margin:0;
-line-height: 1.3;
-}
-
-
-
-.recipe-details > h2, #h2, #middleh2{
-    font-weight: 700;
-    font-size: 30px;
-    margin: 57px 0 13px 0;
-    color: #b4c5d6;
-
-}
-#middleh2{
-    margin: 68px 0 18px 0;
-}
-.recipe-flex{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction:column ; */
-    justify-content: space-between;
-    font-size: 20px;
-    line-height: 1.75;
-}
-.recipe-flex >p:nth-child(1) {
-width: 55.72%;
-}
-.recipe-flex >p:nth-child(2)  {
-    width: 36.4%;
-}
-
-.bot-section{
-    margin: 0 7.5%;
-}
-.stage{
-    display: flex;
-}
-.stage > p{
-    margin: -2px 17px 40px 0;
-    line-height: 1.2;
-    font-size: 20px;
-}
-
-.social-share{
-    height: 110px;
-    background-color: #b4c5d6;
-    color: white;
-     font-weight: 700;
-    padding: 0 7.5%;
-    margin: 70px 0  95px 0;
-    DISPLAY: FLEX;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
-.share{
-    margin: auto 10px;
-}
-
-
-.share > img , .share > span, .social-share > span {
-
-    margin: auto 10px;
-}
-.share > img ,  .social-share > span > a >img{
+img, #link > img{
     height: 15px;
     width: 15px;
     background-color: red;
 }
+.services-wrapper
+ {
+
+     width: 85%;
+     margin: 0 7.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--charcoal-grey);
+  }
+
+  .services, .holder{
+
+      width: 38vw;
+      max-width: 730px;
+      display: flex;
+      flex-direction: column;
+  }
+  .services {  border-top: 1px solid var(--charcoal-grey); }
+
+  .img2, .img1 {
+
+    width:42.46vw ;
+    max-width: 815px;
+     height: auto;
+     margin-bottom: 28px;
+}
+.img2{
+    margin-bottom: 56px;
+}
+
+
+.services>h1{
+font-weight: 900;
+font-size: 30px;
+margin: 45px 0 40px 0;
+}
+
+.services>p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+
+
+/* FORM */
+
+form > p {
+    margin: 20px 0 8px 0;
+    font-size: 20px;
+}
+
+   /* dont forget to change place holder style */
+   #count::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+.counter-wrapper {
+    display: flex;
+}
+
+
+#minus,
+#count,
+#plus {
+    width: 38px;
+    border: 1px #999 solid;
+    border-radius: 0;
+    background: white;
+    color: var(--charcoal-grey);;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#count {
+    padding: 6px 12px;
+
+}
+
+
+#minus {
+    margin-right: -1px;
+    padding-bottom: 5px;
+}
+
+#plus {
+    margin-left: -1px;
+}
+#submit{
+
+        width: 118px;
+        height: 37px;
+        object-fit: contain;
+        margin: 56px 0;
+        color: white;
+border: 0;
+border-radius: 0;
+background: var(--charcoal-grey);
+font-size: 20px;
+line-height: 1.15;
+}
+
+
+
+
+.share, #link{
+    font-size: 20px;
+}
+#link{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 13px;
+    line-height: 1.15;
+
+    font-weight: 700;
+}
+
 
 .products-sugested{
     width: 85%;
@@ -141,9 +164,10 @@ width: 55.72%;
 
 }
 
-#h2{
-    color: var(--charcoal-grey);
+h2{
     text-align: center;
+    font-weight: 700;
+    font-size: 30px;
     margin: 100px 0 40px 0;
 }
 .sugested-product{
@@ -163,7 +187,7 @@ width: 55.72%;
    font-size: 20px;
    font-weight: 700;
    line-height: 1.15;
-   margin: 17px 0 16px 0;
+   margin: 17px 0 12px 0;
 }
 
 .sugested-product >p{
@@ -171,7 +195,9 @@ width: 55.72%;
     margin: 0;
 }
 
-
+.sugested-product > button{
+    margin-top: 21px;
+}
 
 .details {
     border: 0;
@@ -191,7 +217,6 @@ line-height: 1;
 .details>svg{
     margin-bottom: 2px;
 }
-
 
 
 .slideshow-container, .dots, .wrapper-swiper{
