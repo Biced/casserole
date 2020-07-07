@@ -101,6 +101,7 @@ form > p {
 #minus,
 #count,
 #plus {
+    font-family: 'atlas';
     width: 38px;
     border: 1px #999 solid;
     border-radius: 0;
@@ -119,18 +120,18 @@ form > p {
 
 #minus {
     margin-right: -1px;
-    padding-bottom: 5px;
+
 }
 
 #plus {
     margin-left: -1px;
 }
 #submit{
-
+    font-family: 'atlas';
         width: 118px;
         height: 37px;
         object-fit: contain;
-        margin: 56px 0;
+        margin: 0;
         color: white;
 border: 0;
 border-radius: 0;
@@ -140,7 +141,9 @@ line-height: 1.15;
 }
 
 
-
+form{
+    display: flex;
+}
 
 .share, #link{
     font-size: 20px;

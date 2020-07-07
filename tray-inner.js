@@ -47,8 +47,8 @@ var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 16,
-    // effect: 'fade',
-    speed: 200,
+    effect: 'slide',
+    speed: 500,
 
 
 

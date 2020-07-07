@@ -1,0 +1,324 @@
+@import "./fonts.css";
+
+:root {
+    --charcoal-grey: #2a2b33;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    max-width:1920px;
+    margin: 0 auto !important;
+    font-family: 'atlas' !important;
+    color: var(--charcoal-grey);
+    direction: rtl;
+
+}
+
+.inner-nav {
+
+    height: 5.42vw;
+    line-height: 5.42vw;
+}
+
+.inner-nav>p {
+
+    margin: 0 7.5%;
+}
+
+
+.page-hero {
+    max-height:593.08px;
+    height: 30.89vw;
+    width: 100%;
+    background-image: url("../img/recipe-inner/top-banner-trey-photo.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.page-hero:before {
+    height: auto;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .12);
+}
+
+.page-hero>h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-wrapper{
+
+    margin: 0 7.5% 53px 7.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar{
+    width: 15.5%;
+}
+.main-wrapper > .products-sugested{
+    width: 81.13%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.sugested-product{
+
+    width:31.85%;
+
+
+}
+.sugested-product > img{
+
+    width: 100%;
+    height: auto;
+
+}
+.sugested-product >h3 ,.sugested-product >p{
+
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.15;
+   margin:24px 0 13px 0;
+}
+
+.sugested-product >p{
+    font-weight: 500;
+    margin: 0;
+}
+p.product-price{
+
+    margin:15px 0 28px 0;
+}
+
+
+/* FORM */
+
+
+
+   /* dont forget to change place holder style */
+   .count::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+.counter-wrapper {
+    display: flex;
+}
+
+
+.minus,
+.count,
+.plus {
+    font-family: 'atlas';
+    width: 38px;
+    height: 38px;
+    border: 1px #999 solid;
+    border-radius: 0;
+    background: white;
+    color: var(--charcoal-grey);;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.count {
+
+    border-right: 0;
+    border-left: 0;
+}
+
+
+
+
+
+.submit{
+font-family: 'atlas';
+        width: 118px;
+        height: 38px;
+        object-fit: contain;
+        margin: 0;
+        color: white;
+border: 0;
+border-radius: 0;
+background: var(--charcoal-grey);
+font-size: 20px;
+line-height: 1.15;
+}
+
+
+
+.form-cart{
+    display: flex;
+    font-size: 20px;
+}
+
+
+
+/* side bar */
+.side-bar >div >  h3{
+   font-size: 20px;
+   font-weight: 700;
+   margin: 0;
+}
+.category{
+    margin-bottom: 45px;
+}
+
+
+select{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+
+
+.inner-nav, #form-category > div >div > h3 {
+    display: none;
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 37px;
+    border-color: #e8e8e8;
+    border-radius: 0;
+    font-family: 'atlas';
+    padding: 10px;
+}
+
+
+
+    .page-hero {
+
+        height: 57.78vw;
+        margin-bottom: 50px;
+    }
+
+
+
+    .page-hero>h1 {
+        font-size:25px;
+        margin: 0;
+    }
+
+    .main-wrapper{
+        /* width:100vw;
+        height: 100%; */
+        margin: 0 6.67vw 50px 6.67vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .side-bar{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .side-bar >div >  h3{
+        /* display:none */
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+     }
+     .category{
+         margin-bottom: 0;
+         width: 41vw;
+     }
+     .suggested{
+         margin-bottom: 0;
+         width: 41vw;
+     }
+
+
+     .sugested-product{
+        width: 41vw;
+        margin-bottom: 30px;
+     }
+
+
+     .sugested-product >h3 ,.sugested-product >p{
+
+        font-size: 15px;
+
+        line-height: 1.53;
+        margin:24px 0 13px 0;
+     }
+
+     .sugested-product >p{
+         display: none;
+     }
+     p.product-price{
+        display: block;
+         margin:0;
+     }
+
+
+     /* FORM */
+
+     .form-cart {
+     display: initial;
+     }
+
+     .submit{
+         width: 100%;
+         height: 36px;
+     }
+
+
+     .minus,
+.count,
+.plus {
+    width: 36px;
+    height: 36px;
+
+
+}
+
+.count{
+    padding: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.counter-wrapper{
+    margin: 20px 0;
+}
+
+
+.main-wrapper > .products-sugested{
+    width: 100%;
+    margin-top: 50px;
+}
+}
