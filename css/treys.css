@@ -191,7 +191,7 @@ line-height: 1.15;
 }
 
 
-select{
+select, .details{
     display: none;
 }
 
@@ -320,5 +320,26 @@ select{
 .main-wrapper > .products-sugested{
     width: 100%;
     margin-top: 50px;
+}
+
+.details {
+    margin-top:12px;
+    display: block;
+    border: 0;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+line-height: 1;
+    font-family : inherit;
+    font-size: 12px;
+
+    color: #999;
+
+    border-bottom: 1px solid #999;
+}
+
+.details>svg{
+    margin-bottom: 1px;
 }
 }

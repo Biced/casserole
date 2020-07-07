@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="./css/recipes-inner.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,7 +13,7 @@
     <div class="inner-nav">
         <p><strong>דף הבית > מגשי אירוח ></strong> מגש מיני קישים במגוון מילויים</p>
     </div>
-
+    <img id="mobile-header" src="./img/recipe-inner/asset-1-20.jpg">
 
 
 
@@ -41,7 +42,7 @@
                 </p>
             </div>
         </div>
-        <img src="./img/recipe-inner/photo-inner-recipie.jpg">
+        <img class="recipe-image" src="./img/recipe-inner/photo-inner-recipie.jpg">
     </div>
 
     <div class="bot-section">
@@ -148,7 +149,7 @@
 
 
     <h2 id="h2">יש לנו עוד מתכונים </h2>
-    <div class="products-sugested">
+    <!-- <div class="products-sugested">
 
 
         <div class="sugested-product">
@@ -187,11 +188,11 @@
                 </svg></button>
         </div>
 
-    </div>
+    </div> -->
     <div class="wrapper-swiper">
         <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper products-sugested">
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="sugested-product">
@@ -245,7 +246,33 @@
         <div class="swiper-button-next"></div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./tray-inner.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (screen.width < 900) {
+
+                console.log("loaded and screen");
+
+                var mySwiper = new Swiper('.swiper-container', {
+
+                    loop: true,
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                    effect: 'slide',
+                    speed: 500,
+
+
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                })
+            }
+            console.log("loaded NO! screen");
+        });
+    </script>
 </body>
 
 </html>

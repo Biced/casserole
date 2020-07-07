@@ -42,19 +42,42 @@ countEl.addEventListener('keydown', (e) => {
 })
 
 
-var mySwiper = new Swiper('.swiper-container', {
-
-    loop: true,
-    slidesPerView: 2,
-    spaceBetween: 16,
-    effect: 'slide',
-    speed: 500,
+document.addEventListener("DOMContentLoaded", () => {
+    if (screen.width < 760) {
 
 
+        var mySwiper = new Swiper('.s1', {
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            effect: 'slide',
+            speed: 500,
 
-})
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        })
+
+        var mySwiper = new Swiper('.s2', {
+
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 16,
+            effect: 'slide',
+            speed: 500,
+
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    }
+
+});

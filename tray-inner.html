@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./css/tray-inner.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,50 +12,23 @@
 
 <body>
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="img/recipes-inner/photo-trey-inner-page.jpg">
+
+    <!-- Slider main container -->
+    <div class="swiper-container s1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="mobile-top-slider"
+                    src="./img/recipes-inner/caserola-24-11-194156.jpg"> </div>
+            <div class="swiper-slide"><img class="mobile-top-slider"
+                    src="./img/recipes-inner/photo-trey-inner-page-2.jpg"></div>
+            <div class="swiper-slide"><img class="mobile-top-slider"
+                    src="./img/recipes-inner/photo-trey-inner-page.jpg"> </div>
         </div>
-        <div class="mySlides fade">
-            <img src="img/recipes-inner/photo-trey-inner-page-2.jpg">
-        </div>
+
     </div>
-    <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-
-
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
 
 
@@ -113,7 +86,7 @@
 
 
     <h2>מוצרים נוספים</h2>
-    <div class="products-sugested">
+    <!-- <div class="products-sugested">
 
 
         <div class="sugested-product">
@@ -152,11 +125,11 @@
                 </svg></button>
         </div>
 
-    </div>
-    <div class="wrapper-swiper">
-        <div class="swiper-container">
+    </div> -->
+    <div class="wrapper-swiper ">
+        <div class="swiper-container s2">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper products-sugested">
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="sugested-product">
