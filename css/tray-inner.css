@@ -20,14 +20,9 @@ body {
 
 .inner-nav {
 
-    height: 5.42vw;
-    line-height: 5.42vw;
+   margin-top: 96px;
 }
 
-.inner-nav>p {
-
-    margin: 0 7.5%;
-}
 
 .services-wrapper
  {
@@ -195,6 +190,8 @@ h2{
         display: none
     }
 
+
+
     .products-sugested{
         width: auto;
         margin: 0;
@@ -224,12 +221,13 @@ h2{
 
 .s1, .swiper-pagination-bullets{
     display: block;
+    z-index: 0;
 }
 .swiper-container.s1 {
     width: 100%;
     height: 100%;
-    /* margin-bottom: 60px; */
-    /* overflow-y: visible !important; */
+    margin-top: 51px;
+
   }
 
 
