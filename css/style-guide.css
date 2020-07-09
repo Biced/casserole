@@ -314,12 +314,17 @@ line-height:1;
   /* svg icons */
 
   .icons >g >g >path{
+      transition: all 0.2s ease-out;
     fill: var(--charcoal-grey);
   }
 
   .icons:hover g> g > path{
 
 fill:var(--cloudy-blue);
+  }
+
+  .icons:hover{
+    cursor: pointer;
   }
 
 
@@ -390,6 +395,7 @@ line-height: 1;
 .plus {
 width: 36px;
 height: 36px;
+font-size: 15px;
 
 }
 

@@ -1,6 +1,6 @@
-const countEl = document.getElementById("count"),
-    plus = document.getElementById("plus"),
-    minus = document.getElementById("minus");
+const countEl = document.querySelector(".count"),
+    plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus");
 
 plus.addEventListener('click', () => {
 

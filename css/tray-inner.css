@@ -1,4 +1,4 @@
-@import "./fonts.css";
+@import "./style-guide.css";
 
 :root {
     --charcoal-grey: #2a2b33;
@@ -28,11 +28,7 @@ body {
 
     margin: 0 7.5%;
 }
-img, #link > img{
-    height: 15px;
-    width: 15px;
-    background-color: red;
-}
+
 .services-wrapper
  {
 
@@ -53,15 +49,18 @@ img, #link > img{
   }
   .services {  border-top: 1px solid var(--charcoal-grey); }
 
-  .img2, .img1 {
+  .holder {
 
     width:42.46vw ;
     max-width: 815px;
      height: 100%;
      margin-bottom: 28px;
+
 }
-.img2{
-    margin-bottom: 56px;
+.holder>.img{
+    margin-bottom: 28px;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -86,72 +85,34 @@ form > p {
     font-size: 20px;
 }
 
-   /* dont forget to change place holder style */
-   #count::-webkit-inner-spin-button {
-    display: none;
-}
 
-
-
-.counter-wrapper {
-    display: flex;
-}
-
-
-#minus,
-#count,
-#plus {
-    font-family: 'atlas';
-    width: 38px;
-  height: 38px;
-    border: 1px #999 solid;
-    border-radius: 0;
-    background: white;
-    color: var(--charcoal-grey);;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-}
-
-#count {
-border-right: 0;
-border-left: 0;
-
-}
-
-
-
-
-#submit{
-    font-family: 'atlas';
-        width: 118px;
-        height: 37px;
-        object-fit: contain;
+.submit{
         margin: 56px 0;
         color: white;
-border: 0;
-border-radius: 0;
-background: var(--charcoal-grey);
-font-size: 20px;
-line-height: 1.15;
 }
 
 
 
 
-.share, #link{
-    font-size: 20px;
-}
 #link{
     color: #999;
     text-decoration: none;
     margin-bottom: 13px;
-    line-height: 1.15;
-
-    font-weight: 700;
+    display: flex;
+    font-weight: 500;
 }
 
+#link > svg{
 
+    height: 21px;
+    margin: auto 8px 0 8px;
+
+}
+#link > p{
+
+    margin: 0;
+
+}
 .products-sugested{
     /* width: 85%; */
     margin: 0 7.5% 100px 7.5%;
@@ -163,7 +124,7 @@ line-height: 1.15;
 
 h2{
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 30px;
     margin: 100px 0 40px 0;
 }
@@ -182,13 +143,13 @@ h2{
 .sugested-product >h3 ,.sugested-product >p{
 
    font-size: 20px;
-   font-weight: 700;
+   font-weight: 500;
    line-height: 1.15;
    margin: 17px 0 12px 0;
 }
 
 .sugested-product >p{
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -196,32 +157,41 @@ h2{
     margin-top: 21px;
 }
 
-.details {
-    border: 0;
-        border-radius: 0;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
-line-height: 1;
-    font-family : inherit;
-    font-size: 16px;
-
-    color: #999;
-
-    border-bottom: 1px solid #999;
+.share{
+   display:  flex;
 }
-
-.details>svg{
-    margin-bottom: 2px;
+.share >svg:nth-child(2){
+    margin: auto 16px 0 32px;
 }
+.share >svg:nth-child(2):hover >g >g{
+    stroke:var(--cloudy-blue);
+}
+.share >svg:nth-child(5){
+    margin-top: auto;
+}
+.share >span:nth-child(4){
+    margin: auto 32px auto 16px;
+    text-align: center;
 
+    line-height:100%;
+
+
+}
+.share >span:nth-child(1){
+    margin: auto 0;
+    text-align: center;
+
+    line-height:100%;
+
+
+}
 
 .s1, .swiper-pagination-bullets{
     display: none;
 }
 @media only screen and (max-width: 767px){
 
-    .inner-nav, .holder, .img1, .img2, #link {
+    .inner-nav, .holder, #link {
         display: none
     }
 
@@ -327,33 +297,10 @@ width: 100%;
             font-size: 15px;
         }
 
-           /* dont forget to change place holder style */
-           #count::-webkit-inner-spin-button {
-            display: none;
-        }
 
-
-
-        .counter-wrapper {
-            display: flex;
-        }
-
-
-        #minus,
-        #count,
-        #plus {
-            font-size: 15px;
-        }
-
-
-
-
-        #submit{
-                width: 114px;
-                height: 36px;
+        .submit{
                 margin: 28px 0;
-        background: var(--charcoal-grey);
-        font-size: 15px;
+
         }
 
 
@@ -366,9 +313,29 @@ width: 100%;
             border-bottom: solid 1px #eef2f5 ;
             DISPLAY: FLEX;
     JUSTIFY-CONTENT: CENTER;
+
         }
-        .share > img , .share > span{
-             margin: auto 10px;
+        .share > svg , .share > span{
+            line-height:0;
+             margin: auto 0;
+
+             text-align: center;
+        }
+        .share > svg:nth-child(2) {
+            height: 15px;
+            margin: auto 8px auto 16px;
+        }
+        .share > span:nth-child(4) {
+            margin: auto 16px auto 8px;
+
+        }
+        .share > svg:nth-child(3) {
+           height: 20px;
+
+        }
+        .share > svg:nth-child(5) {
+           height: 21px;
+
         }
 
         h2{
@@ -429,4 +396,9 @@ width: 100%;
         .swiper-container.s2{
             margin: 0 6.67vw ;
         }
+
+
+
+
+
 }
