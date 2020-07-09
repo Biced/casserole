@@ -365,8 +365,9 @@ line-height:1;
 
     }
     .page-hero {
-        height: 67.97vw;
+        height: 57.78vw;
         margin-bottom: 38px;
+        background-image: url(../img/recipes/recipie-top-banner-photo.jpg);
     }
 
 
