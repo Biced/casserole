@@ -1,21 +1,4 @@
-@import "./fonts.css";
-
-:root {
-    --charcoal-grey: #2a2b33;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    max-width:1920px;
-    margin: 0 auto !important;
-    font-family: 'atlas';
-
-    direction: rtl;
-    /* overflow: hidden; */
-}
+@import "./style-guide.css";
 
 
 
@@ -61,6 +44,13 @@ body {
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, .09);
+    transition: all 0.2s ease-out;
+}
+
+
+.services:hover> .services:before{
+
+    background: rgba(0, 0, 0, .3);
 }
 .page-hero:before {
     background-blend-mode: multiply;
@@ -70,7 +60,7 @@ body {
 .services>h2, .page-hero>h1 {
     width: 100%;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     position: absolute;
     margin: 0;
@@ -104,23 +94,9 @@ margin: 0 25.6%;
 }
 
 .details {
-    border: 0;
-        border-radius: 0;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
-line-height: 0.8;
-    font-family : inherit;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--charcoal-grey);
-    border-bottom: 0.07vw solid var(--charcoal-grey);
     margin: 2.93vw 0 4.76vw 0;
 }
 
-.details>img {
-    margin-bottom: 0.15vw;
-}
 
 @media only screen and (max-width: 767px){
 
@@ -137,6 +113,9 @@ line-height: 0.8;
         height: 68.06vw;
         margin-bottom: 3.33vw;
     }
+
+
+
     .services-wrapper > a{
         margin: 0 !important;
     }
