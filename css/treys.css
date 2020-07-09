@@ -1,34 +1,5 @@
-@import "./fonts.css";
 
-:root {
-    --charcoal-grey: #2a2b33;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-
-    max-width:1920px;
-    margin: 0 auto !important;
-    font-family: 'atlas' !important;
-    color: var(--charcoal-grey);
-    direction: rtl;
-
-}
-
-.inner-nav {
-
-    height: 5.42vw;
-    line-height: 5.42vw;
-}
-
-.inner-nav>p {
-
-    margin: 0 7.5%;
-}
-
+@import "./style-guide.css";
 
 .page-hero {
     max-height:593.08px;
@@ -37,7 +8,6 @@ body {
     background-image: url("../img/recipe-inner/top-banner-trey-photo.jpg");
     position: relative;
     background-repeat: no-repeat;
-
     background-position: center;
     background-size: cover;
 
@@ -55,10 +25,6 @@ body {
 }
 
 .page-hero>h1 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    color: white;
     position: absolute;
     margin: 0;
     top: 50%;
@@ -73,9 +39,17 @@ body {
     justify-content: space-between;
 }
 
-.side-bar{
+
+
+
+#form-category{
     width: 15.5%;
 }
+
+
+/* .side-bar{
+    width: 15.5%;
+} */
 .main-wrapper > .products-sugested{
     width: 81.13%;
 
@@ -87,7 +61,7 @@ body {
 
 
 .sugested-product{
-
+    margin-bottom: 53px;
     width:31.85%;
 
 
@@ -100,90 +74,27 @@ body {
 }
 .sugested-product >h3 ,.sugested-product >p{
 
-   font-size: 20px;
-   font-weight: 700;
-   line-height: 1.15;
    margin:24px 0 13px 0;
 }
 
 .sugested-product >p{
-    font-weight: 500;
+
     margin: 0;
 }
 p.product-price{
-
     margin:15px 0 28px 0;
 }
 
 
 /* FORM */
-
-
-
-   /* dont forget to change place holder style */
-   .count::-webkit-inner-spin-button {
-    display: none;
-}
-
-
-
-.counter-wrapper {
-    display: flex;
-}
-
-
-.minus,
-.count,
-.plus {
-    font-family: 'atlas';
-    width: 38px;
-    height: 38px;
-    border: 1px #999 solid;
-    border-radius: 0;
-    background: white;
-    color: var(--charcoal-grey);;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.count {
-
-    border-right: 0;
-    border-left: 0;
-}
-
-
-
-
-
-.submit{
-font-family: 'atlas';
-        width: 118px;
-        height: 38px;
-        object-fit: contain;
-        margin: 0;
-        color: white;
-border: 0;
-border-radius: 0;
-background: var(--charcoal-grey);
-font-size: 20px;
-line-height: 1.15;
-}
-
-
-
 .form-cart{
     display: flex;
-    font-size: 20px;
 }
 
 
 
 /* side bar */
 .side-bar >div >  h3{
-   font-size: 20px;
-   font-weight: 700;
    margin: 0;
 }
 .category{
@@ -198,9 +109,12 @@ select, .details{
 @media only screen and (max-width: 1000px) {
 
 
+    #form-category{
+        width: 100%;
+    }
 
 
-.inner-nav, #form-category > div >div > h3 {
+.inner-nav, #form-category > div >div > h3, #form-category > div >div > p {
     display: none;
 }
 
@@ -292,26 +206,6 @@ select{
      display: initial;
      }
 
-     .submit{
-         width: 100%;
-         height: 36px;
-     }
-
-
-     .minus,
-.count,
-.plus {
-    width: 36px;
-    height: 36px;
-
-
-}
-
-.count{
-    padding: 0;
-    border-right: 0;
-    border-left: 0;
-}
 
 .counter-wrapper{
     margin: 20px 0;
@@ -326,21 +220,8 @@ select{
 .details {
     margin-top:12px;
     display: block;
-    border: 0;
-        border-radius: 0;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
-line-height: 1;
-    font-family : inherit;
-    font-size: 12px;
-
-    color: #999;
-
-    border-bottom: 1px solid #999;
 }
 
-.details>svg{
-    margin-bottom: 1px;
-}
+
+
 }

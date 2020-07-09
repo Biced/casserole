@@ -63,10 +63,16 @@ let scrolled = () => {
 
 document.addEventListener('scroll', () => {
     nav.style.setProperty('background-color', scrolled() > 5 || document.querySelector('#search:focus') ? 'rgba(42, 43, 51, 0.8)' : 'transparent');
+    if (nav.classList.contains("icons-header-black")) {
+        nav.classList.remove("icons-header-black");
+    }
 })
 searchActive.addEventListener('click', (e) => {
     if (document.querySelector('#search:focus')) {
         nav.style.backgroundColor = 'rgba(42, 43, 51, 0.8)';
+        if (nav.classList.contains("icons-header-black")) {
+            nav.classList.remove("icons-header-black");
+        }
     }
 });
 

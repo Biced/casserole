@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="32px" viewBox="0 0 15 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desktop facebook fotter blue</title>
+    <defs>
+        <polygon id="path-1" points="0.000642857143 0.000106666667 14.85 0.000106666667 14.85 31.28512 0.000642857143 31.28512"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/facebook/fotter/blue-Copy" transform="translate(-9.000000, 0.000000)">
+            <g id="Desktop-facebook-fotter-blue" transform="translate(9.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M9.4485,10.8541867 L9.4485,6.88405333 C9.4485,5.66592 10.6967143,5.38005333 11.2785,5.38005333 C11.8592143,5.38005333 14.8388571,5.37685333 14.8388571,5.37685333 L14.8388571,-0.000213333333 L10.7738571,0.000853333333 C5.31064286,0.000853333333 4.06671429,3.99872 4.06671429,6.55872 L4.06671429,10.8541867 L0.000642857143,10.8541867 L0.000642857143,16.3773867 L4.06671429,16.3773867 L4.06671429,31.28512 L9.4485,31.28512 L9.4485,16.3773867 L14.301,16.3773867 L14.8506429,10.8541867 L9.4485,10.8541867 Z" id="Fill-1" fill="#2A2B33" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
