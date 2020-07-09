@@ -323,34 +323,7 @@ fill:var(--cloudy-blue);
   }
 
 
-  /* svg icons header */
-.icons-white>svg >g > g >{
-    stroke: var(--white-two);
-}
 
-.icons-header >svg:hover > g>g{
-    stroke: var(--white-two-30);
-
-}
-  .icons-header-black>svg >g>g{
-      stroke: var(--charcoal-grey);
-  }
-  .icons-header-black>svg:hover >g>g{
-    stroke: var(--cloudy-blue);
-  }
-.icons-header-black{
-    background-color:white;
-}
-
-  .menu-btn:hover>.btn-line{
-    background: var(--white-two-30);
-  }
-  .icons-header-black>menu-btn>.btn-line{
-      background:var(--charcoal-grey);
-  }
-  .icons-header-black>menu-btn:hover>.btn-line{
-      background:var(--cloudy-blue);
-  }
 
 
   .services:hover:before{
