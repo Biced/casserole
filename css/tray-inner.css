@@ -1,22 +1,6 @@
 @import "./style-guide.css";
 
-:root {
-    --charcoal-grey: #2a2b33;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-
-    max-width:1920px;
-    margin: 0 auto !important;
-    font-family: 'atlas' !important;
-    color: var(--charcoal-grey);
-    direction: rtl;
-
-}
 
 .inner-nav {
 
@@ -155,6 +139,13 @@ h2{
 .share{
    display:  flex;
 }
+.share>svg{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+
 .share >svg:nth-child(2){
     margin: auto 16px 0 32px;
 }
@@ -316,7 +307,7 @@ width: 100%;
         .share > svg , .share > span{
             line-height:0;
              margin: auto 0;
-
+            padding: 0;
              text-align: center;
         }
         .share > svg:nth-child(2) {
