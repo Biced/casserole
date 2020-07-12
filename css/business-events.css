@@ -1,0 +1,205 @@
+@import "./style-guide.css";
+
+.page-hero {
+    max-height:593.08px;
+    height: 30.89vw;
+    width: 100%;
+    background-image: url("../img/business/events-top-banner-photo.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.page-hero:before {
+    height: auto;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .15);
+}
+
+.page-hero>h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.events-top, .events-bottom{
+    display: flex;
+    margin: 0 7.5% 100px 7.5%;
+    justify-content: space-between;
+}
+/* .events-bottom{
+    justify-content: space-between;
+} */
+.events-bottom img, .event, .events-content{
+    width: calc(50% - 10px);
+}
+
+
+.events-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.events-content >p, .events-content h2{
+    margin: 0 0 60px;
+}
+.events-content >p, .logos{
+    width: 75%;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.logos img{
+    height: 100%;
+    margin: auto 0;
+}
+.logos:first-of-type{
+    margin-bottom: 28px;
+}
+
+.logos:first-of-type >img{
+    max-width: 30%;
+    height: 100%;
+}
+.logos:last-of-type >img{
+    max-width: 45%;
+    height: 100%;
+}
+/* .logos img:first-child{
+    margin-bottom: 28px;
+
+}
+
+.logos img:nth-child(2) ,.logos img:nth-child(3){
+    margin: auto 0;
+} */
+
+.event{
+    padding: 51px 40px;
+    background-color: var(--very-light-pink);
+}
+
+.event h3{
+    margin: 0 0 36px;
+}
+.event input, .event textarea{
+    width: 100%;
+    font-family: 'atlas';
+    padding: 16px 20px;
+    border: 0;
+    margin-bottom: 19px;
+    border-radius: 0;
+}
+
+
+.event textarea{
+    height: 150px;
+    margin-bottom: 75px;
+}
+.event button{
+    float: left;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.inner-nav{
+    display: none;
+}
+
+
+.page-hero {
+
+    height: 57.78vw;
+    margin-bottom: 50px;
+}
+
+
+
+.page-hero>h1 {
+    font-size:25px;
+    margin: 0;
+}
+
+    .events-top, .events-bottom{
+        /* display: initial; */
+        margin: 0 6.67vw 0 6.67vw;
+
+        justify-content: initial;
+        flex-direction: column;
+    }
+    .events-content, .event, .logos, .events-bottom img, .event h3{
+        width: 100%;
+    }
+
+
+
+    .event {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+        padding: 20px 15px;
+    }
+.events-content p, .events-content h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events-content h2, .event h3{
+    font-size: 20px;
+}
+    .event>input {
+        padding: 11px;
+
+
+        width: 48%;
+
+        margin-bottom: 0;
+
+    }
+
+    .event>textarea {
+        padding: 11px;
+        width: 100%;
+        height: 120px;
+
+        margin:12px 0 50px;
+    }
+
+    .event>button {
+
+
+        font-size: 13px;
+width: 144px;
+margin-right: auto;
+    }
+.events-bottom{
+    margin-bottom: 50px;
+}
+.events-bottom img:first-child{
+    margin-bottom: 20px;
+}
+
+
+.logos:first-of-type {
+    margin-bottom: 22px;
+}
+
+}
